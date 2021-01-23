@@ -1,0 +1,41 @@
+/*Accept two number from user and return the largest number
+input :15 21
+output:21
+*/
+
+#include<iostream>
+using namespace std;
+class Large
+{
+    public:
+    int display(int no1,int no2)
+    {
+        if(no1>=no2)
+        {
+            return no1;
+
+        }
+        else
+        {
+          return no2;
+
+        }
+
+    }
+};
+int main()
+{
+    int ivalue1=0;
+    int ivalue2=0;
+    int ret=0;
+    cout<<"Enter the first number "<<"\n";
+    cin>>ivalue1;
+    cout<<"Enter the second number "<<"\n";
+    cin>>ivalue2;
+    Large obj;
+   ret= obj.display(ivalue1,ivalue2);
+    cout<<"LArge number is "<<ret <<"\n";
+    return 0;
+
+
+}
