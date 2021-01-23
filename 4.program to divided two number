@@ -1,0 +1,35 @@
+//program to divided two number
+#include<iostream>
+using namespace std;
+class divide
+{
+    public:
+    int display(int no1,int no2)
+    {
+        int ans=0;
+        if(no2==0)
+        {
+            return -1;
+
+        }
+        ans=no1/no2;
+        return ans;
+
+    }
+};
+int main()
+{
+    int ivalue1=0;
+    int ivalue2=0;
+    int iret=0;
+    cout<<"Enter the first number"<<"\n";
+    cin>>ivalue1;
+     cout<<"Enter the second number"<<"\n";
+    cin>>ivalue2;
+    divide obj;
+    iret=obj.display(ivalue1,ivalue2);
+    cout<<"Division is "<<iret;
+    return 0;
+    
+
+}
