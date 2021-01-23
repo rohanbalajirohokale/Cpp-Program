@@ -1,0 +1,25 @@
+//Accept one number from user ans print that number of * on screen.
+#include<iostream>
+using namespace std;
+class Print
+{
+    public:
+    void display(int no)
+    {
+        int i=1;
+        for(i=1;i<=no;i++)
+        {
+            cout<<"*"<<"\n";
+
+        }
+    }
+};
+int main()
+{
+    int value=0;
+    cout<<"Enter the number"<<"\n";
+    cin>>value;
+    Print obj;
+    obj.display(value);
+    return 0;
+}
