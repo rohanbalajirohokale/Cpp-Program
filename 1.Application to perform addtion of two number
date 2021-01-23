@@ -1,0 +1,32 @@
+// Application to perform addtion of two number 
+
+#include<iostream>
+using namespace std;
+
+class Add
+{
+    public:
+    
+    int Addtion(int no1,int no2)
+    {
+        int result=0;
+        result=no1+no2;
+        return result;
+    }
+};
+int main()
+{
+int ivalue1=0;
+int ivalue2=0;
+int iret=0;
+
+cout<<"Enter the first number"<<"\n";
+cin>>ivalue1;
+cout<<"Enter the second number"<<"\n";
+cin>>ivalue2;
+Add obj;
+iret=obj.Addtion(ivalue1,ivalue2);
+cout<<"Addtion is "<<iret <<"\n";
+return 0;
+
+}
