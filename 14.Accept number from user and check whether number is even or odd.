@@ -1,0 +1,41 @@
+//Accept number from user and check whether number is even or odd.
+#include<iostream>
+using namespace std;
+#define TRUE 1
+#define FALSE 0
+typedef int BOOL;
+
+class Rohan
+{
+    public:
+    BOOL Even(int no1)
+    {
+        if(no1%2==0)
+        {
+            return TRUE;
+        }
+        else{
+              return FALSE;
+        }
+
+    }
+};
+int main()
+{
+   int value=0;
+   BOOL bret=FALSE;
+   cout<<"Enter Number"<<"\n";
+   cin>>value;
+   Rohan obj;
+   bret=obj.Even(value);
+   if(bret==TRUE)
+   {
+       cout<<"It is Even";
+   }
+   else
+   {
+       cout<<"it is a odd";
+   }
+   return 0;
+   
+}
