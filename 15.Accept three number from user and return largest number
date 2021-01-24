@@ -1,0 +1,41 @@
+//Accept three number from user and return largest number
+#include<iostream>
+using namespace std;
+class Rohan
+{
+    public:
+         int large(int no1,int no2,int no3)
+         {
+             if(no1>no2)
+             {
+                return no1;
+             }
+             else if(no2>no3)
+             {
+                 return no2;
+
+             }
+             else{
+                 return no3;
+
+             }
+         }
+};
+int main()
+{
+    int ivalue1=0;
+    int ivalue2=0;
+    int ivalue3=0;
+    int ret=0;
+    cout<<"Enter the first number"<<"\n";
+    cin>>ivalue1;
+    cout<<"Enter the second  number"<<"\n";
+    cin>>ivalue2;
+    
+    cout<<"Enter the third number"<<"\n";
+    cin>>ivalue3;
+    Rohan obj;
+    ret=obj.large(ivalue1,ivalue2,ivalue3);
+    cout<<"Large Number is:"<<ret;
+    return 0;
+}
