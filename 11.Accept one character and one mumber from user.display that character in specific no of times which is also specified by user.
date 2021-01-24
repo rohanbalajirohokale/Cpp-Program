@@ -1,0 +1,30 @@
+//Accept one character and one mumber from user. 
+//display that character in specific no of times which is also specified by user.
+#include<iostream>
+using namespace std;
+
+class Rohan
+{
+    public:
+    void display(int no,char ch)
+    {
+        int i=0;
+        for(i=1;i<no;i++)
+        {
+            cout<<ch<<"\n";
+        }
+    }
+};
+int main()
+{
+    int value=0;
+    char ch1='\0';
+    cout<<"Enter the number" <<"\n";
+    cin>>value;
+     cout<<"Enter the Character"<<"\n";
+    cin>>ch1;
+    Rohan obj;
+    obj.display(value,ch1);
+
+    return 0;
+}
