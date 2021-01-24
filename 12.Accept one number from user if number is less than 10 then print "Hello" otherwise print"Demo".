@@ -1,0 +1,30 @@
+//Accept one number from user if number is less than 10 then print "Hello" otherwise print"Demo".
+
+#include<iostream>
+using namespace std;
+
+class Rohan
+{
+    public :
+    void display(int no)
+    {
+        if(no<=10)
+        {
+            cout<<"Hello";
+
+        }
+        else{
+            cout<<"Demo";
+        }
+    }
+};
+int main()
+{
+    int i=0;
+    cout<<"Enter the Number"<<"\n";
+    cin>>i;
+    Rohan obj;
+    obj.display(i);
+    return 0;
+
+}
