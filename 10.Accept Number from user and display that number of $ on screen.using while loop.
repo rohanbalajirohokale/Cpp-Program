@@ -1,0 +1,32 @@
+//Accept Number from user and display that number of $ on screen.using while loop.
+#include<iostream>
+
+using namespace std;
+ class Number 
+ {
+     public:
+          void display(int no)
+          {
+              
+              if(no<0)
+              {
+                  no=-no;
+              }
+              int i=0;
+              while(i<no)
+              {
+                  cout<<"$"<<"\t";
+                  i++;
+              }
+
+          }
+ };
+ int main()
+ {
+    int i=0;
+    cout<<"Enter the Number"<<"\n";
+    cin>>i;
+    Number obj;
+    obj.display(i);
+    return 0;
+ }
